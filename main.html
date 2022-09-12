@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Quicker</title>
+        <link rel="icon" href="icon.ico">
+        <link rel="stylesheet" href="style.css">  
+        <audio src="quack.mp3" id="quack"></audio>      
+    </head>
+    <body>
+        <div class="btn rgb" onclick="add(1);play('quack');">
+            Крякнуть
+        </div>
+        <div class="sclicks" id="clicks1" >Кликов</div>
+        <script type="text/javascript">
+            var clicks = 0
+            document.addEventListener("DOMContentLoaded", ready);
+            function ready(event) {
+                update(0);
+            }
+            function update(count) {
+                document.getElementById('clicks1').innerHTML = `Кликов: ${clicks}`
+            }
+            function play(id){
+                var audio = document.getElementById(id);
+                audio.play();
+            }
+            function add(count){
+                clicks = clicks + count;
+                update(clicks);
+            }
+        </script>
+    </body>
+</html>

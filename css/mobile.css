@@ -3,12 +3,15 @@
 	src:url('../other/font.otf'); 
 }
 .text{
+    height: 10px;
     font-family:'def';
-    font-size: 3rem;
+    font-size: 5rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color:white;
+    user-select: none;
+    cursor:default;
 }
 body{
     background-image:url('../other/bg.jpg');
@@ -29,9 +32,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 500px; 
-}
-.btn:hover{
-    filter:brightness(120%);
 }
 .btn:active{
     filter:brightness(50%);

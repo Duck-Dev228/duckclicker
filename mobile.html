@@ -3,23 +3,17 @@
         <title>Quicker</title>
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="icon" href="other/icon.ico">
-        <audio src="other/quack.mp3" id="quack"></audio>  
         <meta name="viewport" content="width=device-width, user-scalable=no" />
     </head>
     <body>
         <script type="text/javascript">
-            var clicks = 0
+            var clicks = 0;
             document.addEventListener("DOMContentLoaded", ready);
             function ready(event) {
                 update(0);
             }
             function update(count) {
-                document.getElementById('clicks').innerHTML = `Кряков: ${clicks}`
-            }
-            function play(id){
-                var audio = document.getElementById(id);
-                audio.load();
-                audio.play();
+                document.getElementById('clicks').innerHTML = `Кликов: ${clicks}`
             }
             function add(count){
                 clicks = clicks + count;
@@ -27,6 +21,6 @@
             }
         </script>
         <div class="text" id="clicks"></div>
-        <div class="btn rgb" onclick="add(1);play('quack');">Крякнуть</div>
+        <div class="btn rgb" onclick="add(1);">Крякнуть</div>
     </body>
 </html>

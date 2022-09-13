@@ -3,9 +3,8 @@
 	src:url('../other/font.otf'); 
 }
 .text{
-    height: 10px;
     font-family:'def';
-    font-size: 5rem;
+    font-size: 7rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -18,7 +17,7 @@ body{
     background-size:100% 100%;
 }
 .btn{
-    width: 459px;
+    width: auto;
     height: 200px;
     border-radius: 10%;
     border-color:rgb(255,255,255,0.2);

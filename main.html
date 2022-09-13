@@ -6,12 +6,14 @@
         <audio src="other/quack.mp3" id="quack"></audio>      
     </head>
     <body>
-        <div class="btn rgb" onclick="add(1);play('quack');">
+        <div class="btn rgb" onclick="add(1);quack();">
             Крякнуть
         </div>
         <div class="sclicks" id="clicks1" >Кликов</div>
         <script type="text/javascript">
             var clicks = 0
+            var audio = document.getElementById('quack');
+            audio.load();
             document.addEventListener("DOMContentLoaded", ready);
             function ready(event) {
                 update(0);
@@ -19,8 +21,7 @@
             function update(count) {
                 document.getElementById('clicks1').innerHTML = `Кликов: ${clicks}`
             }
-            function play(id){
-                var audio = document.getElementById(id);
+            function quack(){
                 audio.load();
                 audio.play();
             }

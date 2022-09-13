@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'def'; 
+	src:url('../other/font.otf'); 
+}
+.text{
+    font-family:'def';
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:white;
+}
+body{
+    background-image:url('../other/bg.jpg');
+    background-size:100% 100%;
+}
+.btn{
+    width: 459px;
+    height: 200px;
+    border-radius: 10%;
+    border-color:rgb(255,255,255,0.2);
+    font-family:'def';
+    font-size: 5rem;
+    color:white;
+    line-height: 195px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 500px; 
+}
+.btn:hover{
+    filter:brightness(120%);
+}
+.btn:active{
+    filter:brightness(50%);
+}
+.btn.rgb{
+    background-image: linear-gradient(60deg, #e85475 10%, #d48444 50%, #efcb0a 100%);
+}

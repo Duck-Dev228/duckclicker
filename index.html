@@ -4,7 +4,13 @@
     </head>
     <body>
         <script type="text/javascript">
-            window.location.replace("main.html");
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                windows.location.replace("mobile.html");
+            }
+            else{
+                window.location.replace("mobile.html");
+            }
+            
         </script>
     </body>
 </html>

@@ -1,15 +1,11 @@
 <html>
     <head>
         <title>Quicker</title>
+        <link rel="stylesheet" href="css/mobile.css">
         <link rel="icon" href="other/icon.ico">
-        <link rel="stylesheet" href="css/style.css">  
-        <audio src="other/quack.mp3" id="quack"></audio>      
+        <audio src="other/quack.mp3" id="quack"></audio>  
     </head>
     <body>
-        <div class="btn rgb" onclick="add(1);play('quack');">
-            Крякнуть
-        </div>
-        <div class="sclicks" id="clicks1" >Кликов</div>
         <script type="text/javascript">
             var clicks = 0
             document.addEventListener("DOMContentLoaded", ready);
@@ -17,7 +13,7 @@
                 update(0);
             }
             function update(count) {
-                document.getElementById('clicks1').innerHTML = `Кликов: ${clicks}`
+                document.getElementById('clicks').innerHTML = `Кряков: ${clicks}`
             }
             function play(id){
                 var audio = document.getElementById(id);
@@ -29,5 +25,7 @@
                 update(clicks);
             }
         </script>
+        <div class="text" id="clicks"></div>
+        <div class="btn rgb" onclick="add(1);play('quack');">Крякнуть</div>
     </body>
 </html>
